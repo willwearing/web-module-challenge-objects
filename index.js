@@ -170,7 +170,7 @@ getLastReview(reviews);
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
-function getReviewByRating(/* code here */) {
+function getReviewByRating(test) {
   /* code here */
 }
 
