@@ -237,6 +237,15 @@ The returned object should have the following characteristics:
          (2) returns the updated value of the `odometer`.
 */
 
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(num) {
+  let obj = {
+    odometer: num,
+    drive: function(distance) {
+      let newValue = num + distance;
+      obj.odometer.push(newValue);
+      return obj;
+    },
+  }
 }
+
+carMaker(10).
