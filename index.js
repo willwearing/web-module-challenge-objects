@@ -240,12 +240,14 @@ The returned object should have the following characteristics:
 function carMaker(num) {
   let obj = {
     odometer: num,
-    drive: function(distance) {
+    drive: function (distance) {
       let newValue = num + distance;
-      obj.odometer.push(newValue);
-      return obj;
+      obj.odometer = newValue;
+      return obj.odometer;
     },
-  }
+  };
+  obj.drive(10);
+  return obj;
 }
 
-carMaker(10).
+carMaker(10);
